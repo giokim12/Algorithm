@@ -2,9 +2,11 @@ student_total, room_total = map(int, input().split())
 students = [list(map(int, input().split())) for _ in range(student_total)]
 bucket = [[0]*7 for _ in range(2)]
 
+
 for i in range(len(students)):
     bucket[students[i][0]][students[i][1]] += 1
 
+# print(bucket)
 room_number = 0
 for i in range(2):
     for j in range(7):
