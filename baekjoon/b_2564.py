@@ -1,26 +1,32 @@
 width, height = map(int, input().split())
 store_cnt = int(input())
 temp = []
-for i in range(4):
+for i in range(store_cnt+1):
     temp.append(list(map(int, input().split())))
 
-arr = [[0]*width for _ in range(height)]
-for i in range(3):
-    if temp[i][0]==1: #북쪽이면
-        arr[0][temp[i][1]] = 1
-    elif temp[i][0]==2: #남쪽이면
-        arr[height-1][temp[i][1]] =1
-    elif temp[i][0]==3: #서쪽이면
-        arr[temp[i][1]][0]=1
-    elif temp[i][0]==4:
-        arr[temp[i][1]][width-1]=1
+# for i in range(store_cnt+1):
+#     if temp[i][0]==1: #북쪽이면
+#         temp[i][0] = 0
+#     elif temp[i][0]==2: #남쪽이면
+#         temp[i][0] =height
+#     elif temp[i][0]==3: #서쪽이면
+#         temp[i][0]= temp[i][1]
+#         temp[i][1] = 0
+#     elif temp[i][0]==4:
+#         temp[i][0] = temp[i][1]
+#         temp[i][1] = width
 
-if temp[3][0]==1: #북쪽이면
-    arr[0][temp[3][1]] = 2
-elif temp[3][0]==2: #남쪽이면
-    arr[height-1][temp[3][1]] =2
-elif temp[3][0]==3: #서쪽이면
-    arr[temp[3][1]][0]=2
-elif temp[3][0]==4:
-    arr[temp[3][1]][width-1]=2
+# print(temp)
+dong0 = temp[store_cnt+1][0]
+dong1 = temp[store_cnt+1][1]
+
+total = 0
+for i in range(store_cnt):
+    if temp[i][0]== dong0:
+        total += abs(dong1-temp[i][1])
+        
+
+
+
+
 
