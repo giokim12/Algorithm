@@ -9,10 +9,8 @@
       <change afterPath="$PROJECT_DIR$/card_counting_4047.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kill_fly3_12712.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kill_fly3_for_12712.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omok_11315.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/snail_1954.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kill_fly_2001.py" beforeDir="false" afterPath="$PROJECT_DIR$/kill_fly_2001.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samsung_bus_6485.py" beforeDir="false" afterPath="$PROJECT_DIR$/samsung_bus_6485.py" afterDir="false" />
     </list>
@@ -263,6 +261,11 @@
           <url>file://$PROJECT_DIR$/change_1970.py</url>
           <line>8</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/omok_11315.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
