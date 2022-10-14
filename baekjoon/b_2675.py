@@ -6,3 +6,4 @@ for tc in range(TC):
 
     for i in word:
         print(n*i, end='')
+    print()
