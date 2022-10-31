@@ -16,17 +16,19 @@
 #
 #     print(arr[level][0], end='')
 #     rcr(level+1)
-import sys
 
-N = int(sys.stdin.readline().strip())
-tree = {}
+N = int(input())
+arr = [list(input().split()) for _ in range(N)]
+print(arr)
 
-for n in range(N):
-    root, left, right = sys.stdin.readline().strip().split()
-    tree[root] = [left, right]
+def preorder(level):
+    if level==N:
+        return
+
+    for i in range(N):
 
 
-def preorder(root):
+def preorder(level):
     if root != '.':
         print(root, end='')  # root
         preorder(tree[root][0])  # left
