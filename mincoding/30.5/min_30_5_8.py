@@ -3,23 +3,25 @@ heros = list('BIAH')
 n = int(input())
 path = [0]*len(heros)
 used = [0]*n
-def abc(level):
+def abc(level, start):
     global path
 #
-    if level == n:
+    if level == len(heros):
         for i in range(level):
             print(path[i],end= ' ')
         print()
         return
 #
-    for i in range(len(heros)):
-        if used[i] == 0:
+    for i in range(start, n//4):
+        if used[i] == 1:
+            continue
+        elif used[i] == 0:
             used[i] = 1
             path[level] = heros[i]
-            abc(level+1)
+            abc(level+1, start+1)
             used[i] = 0
 #
-abc(0)
+abc(0, 0)
 print(*path)
 # 
 # 8.
